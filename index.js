@@ -31,7 +31,7 @@ function convert() {
 	document.getElementById("output").innerHTML = result;
 }
 
-
+document.getElementById("btn").addEventListener('click', convert);
 // THESE 2 LINES BELOW MAKE THE SAME FREAKIN' JOB THAT I DID THAT IN 1234123 LINES ABOVE, LMAO
 //var mynumber = 5815; 
 //console.log(mynumber.toString(16));
