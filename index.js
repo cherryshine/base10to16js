@@ -11,6 +11,7 @@ function calculate(input) {
 		modulus[i] = number == 0 ? 1 : Math.floor(number % 16);
 		number = Math.floor((number / 16));
 	}
+
 	for (var k = 0; k < modulus.length; k++) {
 		if (modulus[k] == 10) modulus[k] = "A";
 		if (modulus[k] == 11) modulus[k] = "B";
@@ -19,6 +20,7 @@ function calculate(input) {
 		if (modulus[k] == 14) modulus[k] = "E";
 		if (modulus[k] == 15) modulus[k] = "F";
 	}
+	
 	return modulus.reverse();
 }
 
@@ -31,7 +33,10 @@ function convert() {
 	document.getElementById("output").innerHTML = result;
 }
 
-document.getElementById("btn").addEventListener('click', convert);
+window.onload = () => {
+	document.getElementById("btn").addEventListener("click", convert);
+}
+
 // THESE 2 LINES BELOW MAKE THE SAME FREAKIN' JOB THAT I DID THAT IN 1234123 LINES ABOVE, LMAO
 //var mynumber = 5815; 
 //console.log(mynumber.toString(16));

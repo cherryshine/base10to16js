@@ -12,4 +12,18 @@ html, body {
     text-align: center;
     font-family:  Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app > * {
+    margin: 50px;
+}
+
+#output::before {
+    content: "output";
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px black solid; 
 }

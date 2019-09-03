@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,13 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
-<body>
 
-    <div id="header">base10to16</div>
-    <form action="">
-        <input type="number" name="base10input" id="base10" pattern="[0-9]+"  required title="title">
-        <input type="button" id="btn" value="CONVERT">
-    </form>
-    <div id="output">s</div>
+<body>
+    <div class="app">
+        <div id="header">base10to16</div>
+        <form action="">
+            <input type="number" name="base10input" id="base10" min="0" required autofocus oninput="validity.valid||(value='');">
+            <input type="button" id="btn" value="CONVERT">
+        </form>
+        <div id="output">0</div>
+    </div>
 </body>
+
 </html>
