@@ -23,7 +23,6 @@ html, body {
 
 #output::before {
     content: "output";
-    display: block;
     margin-bottom: 10px;
-    border-bottom: 1px black solid; 
+    display: block;
 }
